@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88a9bb36d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ccs2gda.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="under767pxstyle.css">
+    <title>APPLE-CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="menubar">
+                <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                <li><a href="#" id="store-link">Store</a></li>
+                <li><a href="#" id="mac-link">Mac</a></li>
+                <li><a href="#" id="ipad-link">iPad</a></li>
+                <li><a href="#" id="iphone-link">iPhone</a></li>
+                <li><a href="#" id="watch-link">Watch</a></li>
+                <li><a href="#" id="airpods-link">AirPods</a></li>
+                <li><a href="#" id="tvandhome-link">TV & Home</a></li>
+                <li><a href="#" id="entertainment-link">Enterainment</a></li>
+                <li><a href="#" id="accessories-link">Accessories</a></li>
+                <li><a href="#" id="support-link">Support</a></li>
+                <li><a href="#" id="search-link"><i id="search-icon" class="fas fa-search"></i></a></li>
+                <li><a href="#" id="cart-link"><i class="fas fa-shopping-bag"></i></a></li>
+
+                <li>
+                    <div class="hamburger-menu" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <!-- <div class="bar"></div> -->
+                        <div class="bar"></div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu">
+                <li><a href="#" class="menu-item mob">Store</a></li>
+                <li><a href="#" class="menu-item mob">Mac</a></li>
+                <li><a href="#" class="menu-item mob">iPad</a></li>
+                <li><a href="#" class="menu-item mob">iPhone</a></li>
+                <li><a href="#" class="menu-item mob">Watch</a></li>
+                <li><a href="#" class="menu-item mob">AirPods</a></li>
+                <li><a href="#" class="menu-item mob">TV & Home</a></li>
+                <li><a href="#" class="menu-item mob">Entertainment</a></li>
+                <li><a href="#" class="menu-item mob">Accessories</a></li>
+                <li><a href="#" class="menu-item mob">Support</a></li>
+            </ul>
+
+
+
+            <div class="menubar_hidden">
+                <div class="bckdrp">
+                    <div class="store">
+                        <section>
+                            <li id="menu_head">Shop</li>
+                            <li>Shop the Latest</li>
+                            <li>Mac</li>
+                            <li>iPhone</li>
+                            <li>iPad</li>
+                            <li>Apple Watch</li>
+                            <li>Accessories</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Quick Links</li>
+                            <li>Find a Store</li>
+                            <li>Order Status</li>
+                            <li>Ways to Buy</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop Special Stores</li>
+                            <li>Education</li>
+                            <li>Business</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="mac">
+                        <section>
+                            <li id="menu_head">Explore Mac</li>
+                            <li>Explore All Mac</li>
+                            <li>MacBook Air</li>
+                            <li>MacBook Pro</li>
+                            <li>iMac</li>
+                            <li>iMac mini</li>
+                            <li>Mac Studio</li>
+                            <li>Mac Pro</li>
+                            <li>Displays</li>
+                            <li id="compare">Compare Mac</li>
+                            <li id="does">Mac Does That</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop Mac</li>
+                            <li>Shop Mac</li>
+                            <li>Mac Accessories</li>
+                            <li>Ways to Buy</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">More form Mac</li>
+                            <li>Mac Support</li>
+                            <li>macOS Ventura</li>
+                            <li>Continuty</li>
+                            <li>iCloud</li>
+                            <li>Mac for Business</li>
+                            <li>Education</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="ipad">
+                        <section>
+                            <li id="menu_head">Explore iPad</li>
+                            <li>Explore All iPad</li>
+                            <li>iPad Pro</li>
+                            <li>iPad air</li>
+                            <li>iPad</li>
+                            <li>iPad mini</li>
+                            <li>Apple Pencil</li>
+                            <li>Keyboards</li>
+                            <li id="compare">Compare iPad</li>
+                            <li id="does">Why iPad</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop iPad</li>
+                            <li>Shop iPad</li>
+                            <li>iPad Accessories</li>
+                            <li>Ways to Buy</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">More from iPad</li>
+                            <li>iPad Support</li>
+                            <li>iPadOS 16</li>
+                            <li>iCloud</li>
+                            <li>Education</li>
+    
+    
+                        </section>
+    
+                    </div>
+                    <div class="iphone">
+                        <section>
+                            <li id="menu_head">Explore iPhone</li>
+                            <li>Explore All iPhones</li>
+                            <li>iPhone 14 Pro</li>
+                            <li> iPhone 14</li>
+                            <li>iPhone 13</li>
+                            <li>iPhone 12</li>
+                            <li>iPhone SE</li>
+                            <li id="compare">Compare to iPhone</li>
+                            <li id="does">Switch to iPhone</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop iPhone</li>
+                            <li>Shop iPhone</li>
+                            <li>iPhone Accessories</li>
+                            <li>Apple Trade In</li>
+                            <li>Ways to Buy</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">More from iPhone</li>
+                            <li>iPhone Support</li>
+                            <li>iOs 16</li>
+                            <li>iPhone Privacy</li>
+                            <li>iCloud</li>
+                            <li>Wallet</li>
+                            <li>Siri</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="watch">
+                        <section>
+                            <li id="menu_head">Explore Watch</li>
+                            <li>Explore All Apple Watch</li>
+                            <li>Apple Watch Ultra</li>
+                            <li>Apple Watch Series 8</li>
+                            <li>Apple Watch SE</li>
+                            <li>Apple Watch Nike</li>
+                            <li id="compare">Compare</li>
+                            <li id="does">Why Apple Watch</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop Watch</li>
+                            <li>Shop Apple Watch</li>
+                            <li>Apple Watch Straps</li>
+                            <li>Apple Watch Accessories</li>
+                            <li>Ways to Buy</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">More form Watch</li>
+                            <li>Apple Watch Support</li>
+                            <li>watchOS 9</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="airpods">
+                        <section>
+                            <li id="menu_head">Explore AirPods</li>
+                            <li>Explore All AirPods</li>
+                            <li>AirPods 2nd generation</li>
+                            <li>AirPods 3rd generation</li>
+                            <li>AirPods Pro 2nd generation</li>
+                            <li>AirPods Max</li>
+                            <li id="compare">Compare AirPods</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop AirPods</li>
+                            <li>Shop AirPods</li>
+                            <li>AirPods Accessories</li>
+    
+    
+                        </section>
+                        <section>
+                            <li id="menu_head"> More from Airpods</li>
+                            <li>AirPods Support</li>
+                            <li>Apple Music</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="tvandhome">
+                        <section>
+                            <li id="menu_head">Explore TV & Home</li>
+                            <li>Explore TV & Home</li>
+                            <li>Apple TV 4K</li>
+                            <li>HomePod</li>
+                            <li>HomePod mini</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">Shop TV & Home</li>
+                            <li>Shop Apple TV 4K</li>
+                            <li>Shop HomePod</li>
+                            <li>Shop HomePod mini</li>
+                            <li>Shop Siri Remote</li>
+                            <li>TV & Home Accessories</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">More form TV & Home</li>
+                            <li>Apple TV Support</li>
+                            <li>HomePod Support</li>
+                            <li>Apple TV app</li>
+                            <li>Apple TV+</li>
+                            <li>Home app</li>
+                            <li>Apple Music</li>
+                            <li>Siri</li>
+                            <li>AirPlay</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="entertainment">
+                        <section>
+                            <li id="menu_head">Explore Enterainment</li>
+                            <li>Explore Enterainment</li>
+                            <li>Apple One</li>
+                            <li>Apple TV+</li>
+                            <li>Apple Music</li>
+                            <li>Apple Arcade</li>
+                            <li>Apple Podcasts</li>
+                            <li>Apple Books</li>
+                            <li>App Store</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Support</li>
+                            <li>Apple TV+ Support</li>
+                            <li>Apple Music Support</li>
+    
+    
+                        </section>
+    
+    
+                    </div>
+                    <div class="accessories">
+                        <section>
+                            <li id="menu_head">Shop Accessories</li>
+                            <li>Mac</li>
+                            <li>iPhone</li>
+                            <li>iPad</li>
+                            <li>Apple Watch</li>
+                            <li>AirPods</li>
+                            <li>TV & Home</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Explore Accessories</li>
+                            <li>Made by Apple</li>
+                            <li>AirTag</li>
+    
+    
+                        </section>
+    
+    
+                    </div>
+                    <div class="support">
+                        <section>
+                            <li id="menu_head">Explore Support</li>
+    
+                            <li>iPhone</li>
+                            <li>Mac</li>
+                            <li>iPad</li>
+                            <li>Watch</li>
+                            <li>AirPods</li>
+                            <li>Music</li>
+                            <li>TV</li>
+                            <li id="compare">Explore Support</li>
+                        </section>
+                        <section>
+                            <li id="menu_head">Get Help</li>
+                            <li>Community</li>
+                            <li>Check Coverage</li>
+                            <li>Repair</li>
+                            <li>Contact Us</li>
+    
+                        </section>
+                        <section>
+                            <li id="menu_head">Helpful topics</li>
+                            <li>Get AppleCare+</li>
+                            <li>Apple ID & Password</li>
+                            <li>Billing & Subscription</li>
+                            <li>Find My </li>
+                            <li>Accessibility</li>
+    
+                        </section>
+    
+                    </div>
+                    <div class="search">
+                        <section id="menu_head">
+                            <div class="searchbox">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search apple.com" class="searchbox_input">
+                                <span class="searchbox_cursor"></span>
+                            </div>
+                            <ul id="menu_items">
+    
+                                <ul>
+                                    <li>Quick Links</li>
+                                    <li>Accessories</li>
+                                    <li>Find the Store</li>
+                                    <li>AirPods</li>
+                                    <li>AirTag</li>
+                                    <li>Apple Trade In</li>
+                                </ul>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="cart">
+                        <section id="cart_menu_head">
+                            <div class="cartbox">
+                                <h1>Your bag is empty</h1>
+                                <p><span>Sign in</span> to see if you have any saved items</p>
+                            </div>
+                            <ul id="cart_menu_items">
+    
+                                <ul>
+                                    <li>My Profile</li>
+                                    <li><i class="fa-solid fa-box"></i> Orders</li>
+                                    <li> <i class="fa-regular fa-bookmark"></i> Your Saves</li>
+                                    <li><i class="fa-solid fa-user"></i> Account</li>
+                                    <li><i class="fa-solid fa-circle-user"></i> Sign in</li>
+                                </ul>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="first blur">
+                    <div class="first_img">
+                        <img src="./images/wwdc23.png" alt="">
+                        <span>Introducing the new 15-inch MacBook Air with M2,</span><span>Mac Studio with M2 Max and M2
+                            Ultra, and Mac Pro with M2 Ultra.</span>
+                        <p>Watch the keynote</p>
+                    </div>
+                </div>
+    
+                <div class="macbookair blur">
+                    <h1>MacBook Air 15″</h1>
+                    <span>Our most loved laptop, now with a spacious 38.91-centimetre</span><span>(15.3-inch) Liquid Retina
+                        display to make room for more of what you</span><span>love. Supercharged by the M2 chip, with up to
+                        18 hours</span><span>of battery life.</span>
+                    <span>Available starting from 13 June</span>
+                    <div class="macbookairbutton">
+                        <h6>Learn more</h6>
+                        <h6>Order now</h6>
+                    </div>
+                    <img src="./images/macbook_air_15.jpg" alt="">
+                </div>
+                <div class="macstudio blur">
+                    <h1>Mac Studio</h1>
+                    <span>Next-generation power with M2 Max and M2 Ultra. Outrageous</span><span>performance and extensive
+                        connectivity in a compact form,</span><span>transforming any space into a creative studio.</span>
+                    <span>Available starting from 13 June</span>
+                    <div class="macstudiobutton">
+                        <h6>Learn more</h6>
+                        <h6>Order now</h6>
+                    </div>
+                    <img src="./images/mac_studio.jpg" alt="">
+                </div>
+                <div class="macpro blur">
+                    <h1>Mac Pro</h1>
+                    <span>A game-changing combination of Apple silicon performance</span><span>and PCIe expansion for
+                        specialised workflows. And every</span><span>configuration comes with the incredible new M2 Ultra —
+                        our</span><span>most powerful and capable chip ever.</span>
+                    <span>Available starting from 13 June</span>
+                    <div class="macprobutton">
+                        <h6>Learn more</h6>
+                        <h6>Order now</h6>
+                    </div>
+                    <img src="./images/mac_pro.jpg" alt="">
+                </div>
+                </div>
+            <br><br>
+    </header>
+    <footer>
+        <div class="foot">
+            <br>
+            <h6>MacBook Air battery life varies by use and configuration; see ,<span>apple.com/in/batteries</span> for
+                more information.</h6>
+            <br>
+            <hr>
+            <br>
+            <div class="footmenu">
+                <ul class="menu1">
+                    <ul id="R1">
+                        <li>Shop and Learn</li>
+                        <li>Store</li>
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>AirPods</li>
+                        <li>TV & Home</li>
+                        <li>AirTags</li>
+                        <li>Accessories</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                    <ul id="R2">
+                        <li>Apple Wallet</li>
+                        <li>Wallet</li>
+                    </ul>
+                </ul>
+
+
+                <ul class="menu2">
+                    <ul id="R1">
+                        <li>Account</li>
+                        <li>Manage your Apple ID</li>
+                        <li>Apple Store Account</li>
+                        <li>iCloud.com </li>
+                    </ul>
+                    <ul id="R2">
+                        <li>Enterainment</li>
+                        <li>Apple One</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Music</li>
+                        <li>Apple Arcade</li>
+                        <li>Apple Podcasts</li>
+                        <li>Apple Books</li>
+                        <li>App Store</li>
+                    </ul>
+                </ul>
+                <ul class="menu3">
+                    <ul id="R1">
+                        <li>Apple Store</li>
+                        <li>Find a Store</li>
+                        <li>Genius Bar</li>
+                        <li>Today at Apple</li>
+                        <li>Apple Camp</li>
+                        <li>Apple Trade In</li>
+                        <li>Ways to Buy</li>
+                        <li>Recycling Programme</li>
+                        <li>Order Status</li>
+                        <li>Shopping Help</li>
+                    </ul>
+                </ul>
+                <ul class="menu4">
+                    <ul id="R1">
+                        <li>For Business</li>
+                        <li>Apple and Business</li>
+                        <li>Shop for Business</li>
+                    </ul>
+                    <ul id="R2">
+                        <li>For Education</li>
+                        <li>Apple and Education</li>
+                        <li>Shop for Education</li>
+                        <li>Shop for University</li>
+                    </ul>
+                    <ul id="R3">
+                        <li>For Healthcare</li>
+                        <li>Apple in Healthcare</li>
+                        <li>Health on Apple Watch</li>
+                    </ul>
+
+                </ul>
+                <ul class="menu5">
+                    <ul id="R1">
+                        <li>Apple Values</li>
+                        <li>Accessibility</li>
+                        <li>Education</li>
+                        <li>Environment</li>
+                        <li>Privacy</li>
+                        <li>Supplier Responsibility</li>
+                    </ul>
+                    <ul id="R2">
+                        <li>About Apple</li>
+                        <li>Newsroom</li>
+                        <li>Apple Leadership</li>
+                        <li>Career Opportunities</li>
+                        <li>Investors</li>
+                        <li>Ethics & Compilance</li>
+                        <li>Events</li>
+                        <li>Contact Apple</li>
+                    </ul>
+                </ul>
+            </div>
+            <br>
+            <h6>More ways to shop: <span>Find an Apple Store</span> or <span>other retailer</span> near you. Or call
+                000800 040 1966.</h6>
+            <br>
+            <hr>
+            <br>
+            <div class="copyright">
+                <p>Copyright © 2023 Apple Inc. All rights reserved.</p>
+                <h6><span>Privacy Policy</span>|<span> Terms of Use</span>|<span> Sales Policy
+                    </span>|<span>Legel</span>|<span> Site Map</span>
+                </h6>
+                <h6 id="india">India</h6>
+            </div>
+            <br>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="scriptformob.js"></script>
+</body>
+
+</html>

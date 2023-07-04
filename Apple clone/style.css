@@ -1,0 +1,888 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+
+}
+
+body {
+    background-color: #ffffff;
+    /* background-color: #010001; */
+    
+    
+}
+
+.menubar {
+    /* background-color: #121212; */
+    background-color: rgb(22 22 23 / 80%);
+    backdrop-filter: blur(20px);
+    padding: 0.8%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    /* opacity: 0.9; */
+    gap: 3%;
+    z-index: 1000;
+    
+}
+
+.menubar li a {
+    color: #909095;
+    font-size: small;
+    font-family: San Francisco;
+    text-decoration: none;
+}
+.menubar li a i{
+    font-size:medium;
+}
+
+.menubar:hover{
+    background-color: #121212;
+    background-blend-mode:overlay;
+}
+.menubar:hover .menubar_hidden {
+    max-height: 100px;
+  
+    
+      
+    /* Adjust the height as needed */
+}
+.bckdrp {
+    background-color: #121212;
+    backdrop-filter: none; /* Initially disable the backdrop filter */
+  }
+  
+  .menubar:hover + .bckdrp {
+    backdrop-filter: blur(10px); /* Apply backdrop filter with blur effect on hover */
+  }
+  
+.menufor768px{
+    display: none;
+}
+.highlight {
+    background-color: #121212;
+    
+  }
+  #compare, #does, #menu_head{
+    font-size: small;
+}
+#does{
+    padding-bottom: 25%;
+}
+.store {
+  
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+      z-index: 999;
+    
+}
+
+.store section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.store section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.store section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.store section li:last-child{
+    padding-bottom: 50%;
+}
+.store section li{
+    padding-bottom:10%;
+    /* transition: 0.4s ease-in-out; */
+}
+/* --------------------------------------------------- MAC---------------------------------------------------*/
+.mac {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.mac section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.mac section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.mac section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.mac section li:last-child{
+    padding-bottom: 50%;
+    }
+
+.mac section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+
+/* --------------------------------------------------- iPad---------------------------------------------------*/
+.ipad {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.ipad section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.ipad section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.ipad section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.ipad section li:last-child{
+    padding-bottom: 50%;
+}
+.ipad section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- iPhone---------------------------------------------------*/
+.iphone {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.iphone section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.iphone section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.iphone section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.iphone section li:last-child{
+    padding-bottom: 50%;
+}
+.iphone section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- watch---------------------------------------------------*/
+.watch {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.watch section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.watch section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.watch section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.watch section li:last-child{
+    padding-bottom: 50%;
+    }
+
+.watch section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- airpods---------------------------------------------------*/
+.airpods {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.airpods section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.airpods section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.airpods section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.airpods section li:last-child{
+    padding-bottom: 50%;
+    }
+
+.airpods section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- Tv & Home---------------------------------------------------*/
+.tvandhome {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.tvandhome section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.tvandhome section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.tvandhome section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.tvandhome section li:last-child{
+    padding-bottom: 50%;
+    }
+
+.tvandhome section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- entertainment---------------------------------------------------*/
+.entertainment {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.entertainment section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.entertainment section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.entertainment section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.entertainment section li:last-child{
+    padding-bottom: 50%;
+    }
+    
+.entertainment section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- accessories---------------------------------------------------*/
+.accessories {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.accessories section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.accessories section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.accessories section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.accessories section li:last-child{
+    padding-bottom: 50%;
+}
+.accessories section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- support---------------------------------------------------*/
+.support {
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.support section{
+    padding:5% 0% 10% 10%;
+    list-style: none;
+   
+
+    
+}
+.support section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 10% 15%;
+}
+.support section li:first-child{
+    font-size: smaller;
+    padding-bottom: 10%;
+    color:#909095;
+}
+.support section li:last-child{
+    padding-bottom: 50%;
+    }
+    
+.support section li{
+    padding-bottom:10%;
+    transition: 0.4s ease-in-out;
+}
+/* --------------------------------------------------- search---------------------------------------------------*/
+.search {
+   
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.search section{
+    padding:5% 0% 6% 5%;
+  
+}
+.search section:first-child{
+  
+    font-size: x-large;
+    padding: 5% 0 5% 15%;
+    
+}
+.search section li{
+    padding: 3% 0% 3% 15%;
+    /* padding-bottom:10%; */
+    transition: 0.4s ease-in-out;
+    list-style: none;
+
+}
+.search section li::before{
+    font-family: 'Font Awesome';
+    content: "\2192";
+    position:static;
+    padding-right: 10px;
+}
+.search section li:first-child:before{
+    font-family: 'Font Awesome';
+    content: "";
+    position:static;
+    padding-right: 0px;
+}
+
+
+.search section li:nth-child(1){
+    font-size: smaller;
+    padding: 5% 0% 5% 5%;
+    color:#909095;
+}
+.searchbox{
+    margin-bottom: 5%;
+}
+.search section li:nth-child(n+2):hover{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    color: white;
+    
+}
+.searchbox_input {
+    border: none;   
+    background:#161617;
+    font-size: x-large;
+    color: whitesmoke;
+    text-indent: 0;
+    caret-color: whitesmoke;
+}
+.searchbox_input:focus{
+    border-color: #161617;
+    outline: none;
+}
+.searchbox i{
+    font-size: x-large;
+    padding-right: 10px;
+}
+/* --------------------------------------------------- search---------------------------------------------------*/
+.cart {
+   
+    max-height: 0;
+    background-color: #161617;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 999;
+}
+.cart section{
+    padding:5% 0% 6% 20%;
+   
+  
+}
+.cartbox{
+    padding-bottom: 15%;
+    
+}
+.cartbox h1{
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+.cartbox span{
+    color: blue;
+    text-decoration: underline;
+    font-size: smaller;
+}
+.cartbox p{
+    font-size: smaller;
+    color:#909095;
+}
+.cart ul{
+    list-style: none;
+    font-size: small;
+}
+.cart ul li{
+    padding: 3%;
+}
+.cart ul li i{
+    padding: 3%;
+    color: #909095;
+    }
+.cart ul li:first-child{
+    color: #909095;
+}
+.cart ul li:hover i{
+    color: #ffffff;
+}
+/* -----------------------------------------------------------------------first title box------------------------------------------------------------------------------- */
+.first{
+    background-image: url('./images/1_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* top: 0; */
+    z-index: 997;
+    padding: 25%;
+    padding-top: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+   
+
+}
+.first .first_img img{
+    width: 70%;
+    
+     display: block;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  
+    
+}
+.first .first_img{
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.first .first_img :nth-child(3) {
+    padding-bottom: 4%;
+}
+
+.first .first_img p{
+    border-color: #f2f2f2;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 2% 4% 2% 4%;
+    font-size:25px;
+    font-weight: lighter;
+    transition: background-color 0.1s ease-in-out;
+}
+.first .first_img p:hover{
+    background-color: #f2f2f2;
+    color: #121212;
+}
+/* ----------------------------------------------------------------mac book air-------------------------------------------------------------------------------------- */
+.macbookair{
+    background-color: #f5f5f7;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    }
+.macbookair h1{
+    padding-top: 8%;
+    padding-bottom: 4%;
+    font-size: 300%;
+}
+.macbookair span{
+
+    color:#909095 ;
+    font-weight: bolder;
+}
+.macbookair span:nth-child(6) {
+    color: #121212;
+    font-weight:bolder;
+    padding-top: 3%;
+}
+.macbookairbutton{
+    display: flex;
+    flex-direction: row;
+   padding: 2%;
+   gap: 150px;
+}
+.macbookairbutton h6{
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #121212;
+    padding: 15px 20px 15px 20px;
+}
+.macbookairbutton h6:first-child{
+    background-color: #121212;
+    color: #f5f5f7;
+}
+.macbookairbutton h6:first-child:hover{
+    background-color: #f5f5f7;
+    color: #121212;
+    cursor: pointer;
+    }
+.macbookairbutton h6:last-child:hover{
+    background-color: #121212;
+    color: #f5f5f7;
+    cursor: pointer;
+}
+.macbookair img{
+    height: max-content;
+    width: max-content;
+}
+/* ----------------------------------------------------------------mac studio-------------------------------------------------------------------------------------- */
+.macstudio{
+    background-color: #ffff;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    }
+.macstudio h1{
+    padding-top: 8%;
+    padding-bottom: 4%;
+    font-size: 300%;
+}
+.macstudio span{
+
+    color:#909095 ;
+    font-weight: bolder;
+}
+.macstudio span:nth-child(6) {
+    color: #121212;
+    font-weight:bolder;
+    padding-top: 3%;
+}
+.macstudiobutton{
+    display: flex;
+    flex-direction: row;
+   padding: 2%;
+   gap: 150px;
+}
+.macstudiobutton h6{
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #121212;
+    padding: 15px 20px 15px 20px;
+}
+.macstudiobutton h6:first-child{
+    background-color: #121212;
+    color: #ffffff;
+}
+.macstudiobutton h6:first-child:hover{
+    background-color: #ffffff;
+    color: #121212;
+    cursor: pointer;
+    }
+.macstudiobutton h6:last-child:hover{
+    background-color: #121212;
+    color: #ffffff;
+    cursor: pointer;
+}
+.macstudio img{
+    height: max-content;
+    width: max-content;
+}
+/* ------------------------------------------------------------------------------mac pro-------------------------------------------------------------------------------- */
+.macpro{
+    background-color: #f5f5f7;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    }
+.macpro h1{
+    padding-top: 8%;
+    padding-bottom: 4%;
+    font-size: 300%;
+}
+.macpro span{
+
+    color:#909095 ;
+    font-weight: bolder;
+}
+.macpro span:nth-child(6) {
+    color: #121212;
+    font-weight:bolder;
+    padding-top: 3%;
+}
+.macprobutton{
+    display: flex;
+    flex-direction: row;
+   padding: 2%;
+   gap: 150px;
+}
+.macprobutton h6{
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #121212;
+    padding: 15px 20px 15px 20px;
+}
+.macprobutton h6:first-child{
+    background-color: #121212;
+    color: #f5f5f7;
+}
+.macprobutton h6:first-child:hover{
+    background-color: #f5f5f7;
+    color: #121212;
+    cursor: pointer;
+    
+    }
+.macprobutton h6:last-child:hover{
+    background-color: #121212;
+    color: #f5f5f7;
+    cursor: pointer;
+}
+.macpro img{
+    height: max-content;
+    width: max-content;
+}
+/* -----------------------------------------------------------------------------footer----------------------------------------------------------------------------- */
+.foot{
+    background-color: #1d1d1f;
+    color: #acacac;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items: center; */
+    
+}
+.footmenu{
+    display:flex;
+    flex-direction: row;
+    padding: 2%;
+    gap: 80px;
+    justify-content: center;
+    align-self: center;
+}
+.footmenu ul{
+    list-style: none;
+    font-weight: 100%;
+}
+#R1 >:first-child,#R2 >:first-child, #R3 >:first-child{
+    color: #ffffff;
+    font-weight: 800%;
+    font-family: sans-serif;
+    padding: 5px 0 5px 0;
+}
+#R1 >:nth-child(n+2):hover,#R2 >:nth-child(n+2):hover,#R3 >:nth-child(n+2):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#R1,#R2,#R3{
+    font-size: smaller;
+    font-family: sans-serif;
+    
+}
+#R1 li,#R2 li ,#R3 li {
+    padding: 5px 0 5px 0;
+} 
+.foot hr{
+    width: 63%;
+    color: #909095;
+    opacity: 0.5;
+    align-self: center;
+}
+.foot h6{
+    font-size: smaller;
+    /* align-self: flex-start;
+    margin-left: 19%; */
+    align-self: center;
+}
+.foot h6 span{
+    color:blue;
+    text-decoration: underline;
+}
+.copyright{
+    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    
+}
+.copyright h6{
+    padding-left: 75px;
+}
+.copyright h6 span {
+    text-decoration: none;
+    color: #f5f5f7;
+    padding: 5px;
+}
+.copyright h6 span:hover{
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+.hamburger-menu {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+  list-style: none;
+}
+.menu-item .mob{
+    display: none;
+}
